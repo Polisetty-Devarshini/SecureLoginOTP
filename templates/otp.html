@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OTP Verification</title>
+</head>
+
+<body>
+
+    <h2>OTP Verification</h2>
+
+    <p>Your OTP is:</p>
+
+    <h3>{{ otp }}</h3>
+
+    <form method="POST" action="/verify-otp">
+
+        <label>Enter OTP:</label><br>
+        <input type="text" name="otp" maxlength="6" required>
+        <br><br>
+
+        <button type="submit">Verify OTP</button>
+
+    </form>
+
+</body>
+</html>
